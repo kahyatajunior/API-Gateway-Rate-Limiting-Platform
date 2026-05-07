@@ -1,0 +1,16 @@
+{
+  "name": "api-gateway-rate-limiter",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "dev:backend": "npm run dev --workspace backend",
+    "dev:frontend": "npm run dev --workspace frontend",
+    "start": "npm run start --workspace backend",
+    "docker:up": "docker-compose up --build",
+    "docker:down": "docker-compose down"
+  }
+}
